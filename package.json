@@ -1,0 +1,8 @@
+{
+  "name": "autospace",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
