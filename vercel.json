@@ -5,5 +5,5 @@
     }
   },
   "buildCommand": "yarn install && yarn build",
-  "outputDirectory": "apps/web/out"
+  "outputDirectory": "apps/web/.next"
 }
