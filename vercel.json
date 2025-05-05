@@ -3,5 +3,7 @@
     "env": {
       "NODE_ENV": "production"
     }
-  }
+  },
+  "buildCommand": "yarn install && yarn build",
+  "outputDirectory": "apps/web/out"
 }
