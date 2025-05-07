@@ -3,12 +3,12 @@ FROM node:18
 WORKDIR /app
 
 COPY package.json ./
-RUN yarn install
+RUN npm install
 
 COPY . .
 
 RUN npx prisma generate
 
-RUN yarn build
+RUN npm build
 
 CMD ["node", "dist/main"]
