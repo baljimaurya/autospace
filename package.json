@@ -9,6 +9,9 @@
     "turbo": "^1.12.0"
   },
   "scripts": {
-    "build": "turbo run build --filter=@autospace/web-admin"
+    "build:web": "turbo run build --filter=@autospace/web",
+    "build:manager": "turbo run build --filter=@autospace/web-manager",
+    "build:valet": "turbo run build --filter=@autospace/web-valet",
+    "build:admin": "turbo run build --filter=@autospace/web-admin"
   }
 }
