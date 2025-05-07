@@ -1,6 +1,10 @@
-import { authOptions } from '@autospace/network/src/config/authOptions'
-import NextAuth from 'next-auth'
+import { authOptions } from "@autospace/network/src/config/authOptions";
+import NextAuth from "next-auth";
 
-const handler = NextAuth(authOptions)
+const handler = NextAuth(authOptions);
 
-export { handler as GET, handler as POST }
+export { handler as GET, handler as POST };
+
+export async function generateStaticParams() {
+  return [];
+}
