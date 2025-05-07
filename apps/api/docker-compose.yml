@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   db:
@@ -13,5 +13,16 @@ services:
       POSTGRES_PASSWORD: password
     volumes:
       - db_data_autospace:/var/lib/postgresql/data
+
+  backend:
+    container_name: autospace_backend
+    build: .
+    restart: always
+    ports:
+      - 3000:3000
+    env_file: .env
+    depends_on:
+      - db
+
 volumes:
   db_data_autospace:
