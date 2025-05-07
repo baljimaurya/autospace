@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: "export", // Required to generate 'out/' folder
+  // output: "export", // Required to generate 'out/' folder
   images: {
     remotePatterns: [
       { hostname: "api.mapbox.com" },
