@@ -1,11 +1,12 @@
 {
-  "name": "autospace",
-  "version": "1.0.0",
   "private": true,
-  "packageManager": "yarn@1.22.22",
   "workspaces": [
-    "packages/*",
-    "libs/*",
     "apps/*"
-  ]
+  ],
+  "devDependencies": {
+    "turbo": "^1.12.0"
+  },
+  "scripts": {
+    "build": "turbo run build"
+  }
 }
