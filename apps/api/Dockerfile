@@ -9,6 +9,6 @@ COPY . .
 
 RUN npx prisma generate
 
-RUN npm build
+RUN yarn build
 
 CMD ["node", "dist/main"]
