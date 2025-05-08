@@ -1,13 +1,17 @@
 {
   "name": "@autospace/util",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
   "dependencies": {
     "date-fns": "^3.6.0",
     "pluralize": "^8.0.0"
   },
   "devDependencies": {
-    "@types/pluralize": "^0.0.33"
+    "@types/pluralize": "^0.0.33",
+    "typescript": "^5.0.0"
   }
 }
