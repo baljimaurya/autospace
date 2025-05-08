@@ -14,4 +14,4 @@ RUN npx prisma generate
 RUN yarn build
 RUN ls -l
 
-CMD ["node", "dist/main.js"]
+CMD ["node", "dist/main"]
