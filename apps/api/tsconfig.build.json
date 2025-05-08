@@ -1,9 +1,10 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "./dist",
-    "rootDir": "./src"
+    "outDir": "dist",
+    "rootDir": "../../", // Include root for both apps and libs
+    "esModuleInterop": true,
+    "jsx": "react-jsx"
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "test", "**/*spec.ts"]
+  "include": ["apps/api/src/**/*", "libs/**/*"]
 }
