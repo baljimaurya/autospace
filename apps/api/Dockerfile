@@ -11,6 +11,6 @@ COPY . .
 
 RUN npx prisma generate
 
-RUN yarn build
+RUN yarn build && ls -l dist
 
 CMD ["node", "dist/main.js"]
