@@ -3,6 +3,6 @@
   "sourceRoot": "src",
   "compilerOptions": {
     "entryFile": "main",
-    "outputPath": "dist"
+    "outputPath": "./dist"
   }
 }
